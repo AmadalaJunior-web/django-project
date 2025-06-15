@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📈 Choose Your Investment</h1>
+
+        <div class="investment-options">
+            <div class="option" onclick="invest('stocks', 1.5)">
+                <img src="/Screenshot_20250605-103304_1.jpg" alt="Stocks">
+                <h3>Stocks</h3>
+                <p>High risk, high reward (50% return).</p>
+            </div>
+
+            <div class="option" onclick="invest('real-estate', 1.2)">
+                <img src="/Screenshot_20250605-103419_1.jpg" alt="Real Estate">
+                <h3>Real Estate</h3>
+                <p>Stable growth (20% return).</p>
+            </div>
+
+            <div class="option" onclick="invest('crypto', 2.0)">
+                <img src="/Screenshot_20250605-103339_1.jpg" <tag>
+                    <!--Tab to edit-->
+                </tag>alt="Crypto">
+                <h3>Cryptocurrency</h3>
+                <p>Extreme volatility (100% return).</p>
+            </div>
+
+            <div class="option" onclick="invest('gold', 1.1)">
+                <img src="/Screenshot_20250605-103208_1.jpg" alt="Gold">
+                <h3>Gold</h3>
+                <p>Safe & slow growth (10% return).</p>
+            </div>
+        </div>
+
+        <p class="bal">Your balance: <span id="balance">0</span> credits</p>
+        <button class="btn withdraw" onclick="withdraw()">Withdraw Earnings</button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
